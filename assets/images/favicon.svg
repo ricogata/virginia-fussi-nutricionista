@@ -1,0 +1,7 @@
+<!-- Logo provisorio. Reemplazalo por el logo real con el mismo nombre (logo.svg). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" stroke="#5f6b4e" stroke-width="2"/>
+  <path d="M32 50C32 36 22 28 14 26c2 12 8 22 18 24Z" fill="#95a277"/>
+  <path d="M32 50c0-16 8-26 18-30-1 14-7 26-18 30Z" fill="#5f6b4e"/>
+  <path d="M32 50V22" stroke="#5f6b4e" stroke-width="2" stroke-linecap="round"/>
+</svg>
