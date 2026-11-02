@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-olive-50: #f5f6f1;
+  --color-olive-100: #e8ebdf;
+  --color-olive-200: #d2d8c1;
+  --color-olive-300: #b3bd9a;
+  --color-olive-400: #95a277;
+  --color-olive-500: #7a875c;
+  --color-olive-600: #5f6b4e;
+  --color-olive-700: #4b5540;
+  --color-olive-800: #3c4435;
+  --color-olive-900: #2b3127;
+
+  --color-sand-50: #fbf8f3;
+  --color-sand-100: #f5efe5;
+  --color-sand-200: #ebe1d0;
+  --color-sand-300: #dccdb4;
+  --color-sand-400: #c8b393;
+
+  --color-ink: #2a2d26;
+  --color-stone: #6e6f68;
+
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body {
+  @apply bg-sand-50 text-ink font-sans antialiased;
+}
+
+@utility container-site { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+@utility eyebrow { @apply text-xs font-medium uppercase tracking-[0.22em] text-olive-600; }
+@utility heading { @apply font-serif font-medium leading-[1.05] text-ink; }
+
+@utility btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-olive-600;
+  @apply bg-olive-600 text-white shadow-sm hover:bg-olive-700 hover:shadow-md;
+}
+@utility btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-olive-600;
+  @apply border border-olive-600/40 text-olive-700 hover:border-olive-600 hover:bg-olive-600 hover:text-white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
